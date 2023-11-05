@@ -1,0 +1,124 @@
+[
+      {
+        "service_id": 1,
+        "service_name": "Home Cleaning",
+        "service_image": " https://i.postimg.cc/8kZLrhM8/service-home-cleaning.jpg ",
+        "service_description": "Escape to the serene beauty of the mountains in this cozy retreat. This charming mountain cabin is nestled in a tranquil forest, offering a perfect escape from the hustle and bustle of city life. With breathtaking views of the surrounding peaks, a crackling fireplace, and nearby hiking trails, it's the ideal getaway for nature lovers and those seeking relaxation The cabin features comfortable bedrooms, a well-equipped kitchen, and a spacious living area. Outside, you can relax on the deck, enjoy the soothing sounds of nature, and even spot local wildlife. Whether you're looking for a romantic weekend retreat or a family adventure, this mountain cabin has it all.Your host, Sarah, is an experienced home exchanger who takes pride in offering a clean and welcoming environment. She's always ready to provide local recommendations and make your stay unforgettable. Bookour stay in this mountain retreat today and immerse yourself in the beauty of nature and relaxation.",
+        "service_provider_name": "Sarah",
+        "service_provider_image": "https://i.postimg.cc/QNktws0j/Worker-PNG-File.webp",
+        "service_area": "Aspen, Colorado",
+        "service_price": 250.00
+      },
+      {
+        "service_id": 2,
+        "service_name": "Furniture Assembly",
+        "service_image": "https://i.postimg.cc/YqVgdMdb/service-furniture-assembly.jpg",
+        "service_description": "Experience coastal bliss in this stunning beachfront home. This spacious beachfront villa offers direct access to the sandy shores, breathtaking ocean views, and all the amenities you need for a luxurious beach getaway. Theilla boasts multiple bedrooms, a fully equipped kitchen, and a private pool. You can start your day with a leisurely walk on the beach, take a dip in the pool, and relax on the sun-soaked terrace. When you're not soaking in the sun, explore the local restaurants, water sports, and nearby attractions. Your host, John is a seasoned home exchanger who is committed to providing an exceptional stay. He'll ensure that your beachfront escape is memorable and worry-free.  Book your beachfront paradi today and indulge in the ultimate coastal experience.",
+        "service_provider_name": "John",
+        "service_provider_image": "https://i.postimg.cc/cL6Lv3ZJ/studio-shot-young-man-construction-worker-arms-crossed-studio-shot-young-man-construction-worker-iso.webp ",
+        "service_area": "Maui, Hawaii",
+        "service_price": 300.00
+      },
+      {
+        "service_id": 3,
+        "service_name": "Handyman services",
+        "service_image": "https://i.postimg.cc/zX3KwVFy/service-other-handyman-service.jpg",
+        "service_description": "Unplug and unwind in this rustic lakeside cottage. Situated by the tranquil waters of a pristine lake, this charming retreat offers a serene escape from the noise of city life.The cottage features comfortable bedrooms, a fully stocked kitchen, and a cozy living room with a wood-burning fireplace. Outside, you can fish off the dock, go kayaking, or simply relax by the water's edge. With stunning sunsets and starry nights, it's the perfect spot for romantic getaways and family vacations alike.Your host, Emily, has a passion for home exchanging and ensures that your stay is comfortable and memorable. She can provide tips on local activities and attractions to make your stay even more enjoyable. Book your lakeside cottage getaway today and experience the tranquility of lakeside living.",
+        "service_provider_image": "https://i.postimg.cc/gJyYCqyg/portrait-of-cheerful-ginger-blue-collar-worker-in-factory-in-australia.webp",
+        "service_area": "Lake Winnipesaukee, New Hampshire",   
+        "service_provider_name": "Emily",
+        "service_price": 275.00
+      },
+      {
+        "service_id": 4,
+        "service_name": "Hanging Picture & Shelives",
+        "service_image": "https://i.postimg.cc/MHHMYFRC/service-hanging-pictures-shelves.jpg",
+        "service_description": "Step back in time with a stay in this elegant European villa. Located in the heart of historic Florence, Italy, this villa is a true architectural gem. The villa boasts luxurious bedrooms, a well-appointed kitchen, and enchanting gardens. You can explore the rich history of Florence, visit world-renowned museums, and savor authentic Italian cuisine in local trattorias.Your host, David, is an experienced home exchanger who is dedicated to making your stay in this historic villa unforgettable. He'll provide you with insights into the city's cultural treasures and ensure your every need is met. Book your stay in this historic European villa today and immerse yourself in the charm and culture of Florence.",
+        "service_provider_name": "David",
+        "service_provider_image": "https://i.postimg.cc/zDjzp7GB/people-occupation-maintenance-service-concept-343059-3520.webp",
+        "service_area": "Florence, Italy",
+        "service_price": 290.00
+      },
+      {
+        "service_id": 5,
+        "service_name": "TV Mounting",
+        "service_image": "https://i.postimg.cc/65742FBR/service-mount-tv.jpg",
+        "service_description": "Experience coastal charm in this delightful seaside cottage. Located in the picturesque town of Cape Cod, Massachusetts, this cottage offers a peaceful escape by the ocean. The cottage features comfortable bedrooms, a fully equipped kitchen, and a cozy living room with ocean views. You can take leisurely walks on the sandy beach, enjoy fresh seafood at local seafood shacks, and relax on the cottage's porch. Your host, Alice, is a seasoned home exchanger who is passionate about sharing the coastal beauty of Cape Cod with guests. She's ready to provide local recommendations and ensure your stay is relaxing and enjoyable.  Book your stay in this charming coastal retreat today and embrace the serenity of seaside living.",
+        "service_provider_name": "Alice",
+        "service_provider_image": "https://i.postimg.cc/90WWCRJC/mixed-race-worker-on-construction-site.webp",
+        "service_area": "Cape Cod, Massachusetts",
+        "service_price": 280.00
+      },
+      {
+        "service_id": 6,
+        "service_name": "Faucet Replacemant",
+        "service_image": "https://i.postimg.cc/Dz3GK5kG/service-faucets-replacement.jpg",
+        "service_description": "Embrace the majesty of the mountains in this tranquil mountain cabin. Situated in the scenic beauty of Asheville, North Carolina, this cabin offers a perfect escape from the hustle and bustle of city life. The cabin features cozy bedrooms, a well-appointed kitchen, and a spacious living room with a wood-burning fireplace. You can take advantage of nearby hiking trails, starry nights, and the soothing sounds of nature. Your host, Michael, is an experienced home exchanger who takes pride in providing a welcoming environment. He's always available to offer recommendations and ensure your stay is a mountain retreat to remember. Book your stay in this mountain view haven today and immerse yourself in the beauty of nature and relaxation.",
+        "service_provider_name": "Michael",
+        "service_provider_image": "https://i.postimg.cc/BvKZgGj9/industrial-worker-PNG11433.webp",
+        "service_area": "Asheville, North Carolina",
+        "service_price": 250.00
+      },
+      {
+        "service_id": 7,
+        "service_name": "Toilet Trouble",
+        "service_image": "https://i.postimg.cc/MG0QZRqF/service-toilet-trouble.jpg ",
+        "service_description": "Experience the allure of history in this elegant city apartment. Nestled in the heart of San Francisco, California, this apartment offers the perfect blend of modern comforts and historical charm. The apartment features stylish bedrooms, a fully equipped kitchen, and proximity to shops, restaurants, and cultural attractions. You can explore the city's iconic landmarks, dine at renowned restaurants, and enjoy a vibrant urban experience. Your host, Ella, is a seasoned home exchanger who is passionate about providing a comfortable and memorable stay. She's here to offer local insights and make your city adventure truly exceptional. Book your stay in this historic city charm today and immerse yourself in the rich culture of San Francisco.",
+        "service_provider_name": "Ella",
+        "service_provider_image": "https://i.postimg.cc/rFw8H4D9/fariture.webp",
+        "service_area": "San Francisco, California",
+        "service_price": 220.00
+      },
+      {
+        "service_id": 8,
+        "service_name": "Plumbling Service",
+        "service_image": "https://i.postimg.cc/MpQB4N4x/service-other-plumbing.jpg",
+        "service_description": "Revel in the tranquility of lakeside living in this idyllic cottage. Nestled on the shores of Lake Winnipesaukee, New Hampshire, this cottage offers the perfect escape for those seeking lakeside serenity.  The cottage features comfortable bedrooms, a well-equipped kitchen, and a spacious living area with panoramic lake views. You can fish off the private dock, kayak on the lake, and soak in stunning sunsets. Your host, James, is an experienced home exchanger who is dedicated to making your lakeside stay memorable. He'll provide insights into local activities and ensure your lakeside retreat is everything you desire. Book your stay in this lakeside serenity today and discover the beauty of lakeside living.",
+        "service_provider_name": "James",
+        "service_provider_image": "https://i.postimg.cc/PJ2dxXRZ/depositphotos-5997041-stock-photo-caucasian-young-manual-worker-in.webp",
+        "service_area": "Lake Winnipesaukee, New Hampshire",
+        "service_price": 230.00
+      },
+      {
+        "service_id": 9,
+        "service_name": "Electrical Services",
+        "service_image": "https://i.postimg.cc/fLw0VLbT/service-other-electrical.jpg",
+        "service_description": "Indulge in the beauty of the coast with a stay in this charming coastal home. Located in the stunning coastal town of Malibu, California, this home offers sweeping ocean views and all the amenities you need for a coastal escape. The home features luxurious bedrooms, a gourmet kitchen, and a spacious living room with floor-to-ceiling windows. You can start your day with a walk on the sandy beach, explore local tide pools, and enjoy fresh seafood at nearby restaurants.  Your host, Olivia, is a passionate home exchanger who is committed to making your coastal retreat unforgettable. She's ready to offer local tips and ensure your coastal getaway is extraordinary. Book your stay in this coastal oasis today and immerse yourself in the beauty of coastal living.",
+        "service_provider_name": "Olivia",
+        "service_provider_image": "https://i.postimg.cc/tTGqvm61/depositphotos-53919705-stock-photo-warehouse-worker-with-clipboard.webp",
+        "service_area": "Malibu, California",
+        "service_price": 275.00
+      },
+      {
+        "service_id": 10,
+        "service_name": "Vacation Rental Cleaning",
+        "service_image": "https://i.postimg.cc/GtgYwCd3/service-vacation-rental-cleaning.jpg",
+        "service_description": "Escape to the tranquil countryside in this charming cottage. Located in the picturesque Cotswolds region of England, this cottage offers a perfect retreat into the rural beauty of the English countryside. The cottage features comfortable bedrooms, a well-equipped kitchen, and stunning countryside views from every window. You can explore scenic landscapes, visit charming villages, and savor farm-to-table dining at local pubs. Your host, Ben, is an experienced home exchanger who is dedicated to providing a cozy and memorable stay. He can provide insights into the best countryside activities and ensure your countryside getaway is truly special. Book your stay in this countryside bliss today and immerse yourself in the charm of the Cotswolds.",
+        "service_provider_name": "Ben",
+        "service_provider_image": "https://i.postimg.cc/c4ksGJYG/depositphotos-176455430-stock-photo-worker.webp",
+        "service_area": "Cotswolds, England",
+        "service_price": 260.00
+      },
+      {
+        "service_id": 11,
+        "service_name": "Interior Painting",
+        "service_image": "https://i.postimg.cc/G2qTGCBP/service-painting.jpg",
+        "service_description": "Unwind by the lake in this idyllic lakeside retreat. Nestled on the shores of Lake Placid, New York, this retreat offers a perfect escape for those seeking lakeside tranquility.The retreat features comfortable bedrooms, a well-appointed kitchen, and a cozy living room with stunning lake views. You can fish off the private dock, paddleboard on the lake, and enjoy serene moments by the water's edge. Your host, Sophia, is an experienced home exchanger who is passionate about providing a comfortable and memorable lakeside stay. She's here to offer local tips and make your lakeside escape truly exceptional. Book your stay in this lakeside tranquility today and experience the serenity of lakeside living.",
+        "service_provider_name": "Sophia",
+        "service_provider_image": "https://i.postimg.cc/vZjHfmHt/69-698672-construction-worker-love-me-my-construction-worker.webp",
+        "service_area": "Lake Placid, New York",
+        "service_price": 250.00
+      },
+      {
+        "service_id": 12,
+        "service_name": "window Treatments",
+        "service_image": "https://i.postimg.cc/KvdknQYW/service-install-window-treatments.jpg",
+        "service_description": "Embrace the beauty of the mountains in this peaceful mountain cabin. Situated in the stunning Breckenridge, Colorado, this cabin offers a perfect escape for those seeking mountain views and adventure.he cabin features comfortable bedrooms, a fully equipped kitchen, and a spacious living area with panoramic mountain views. You can explore nearby hiking trails, go skiing in the winter, and relax by the cozy fireplace.  Your host, Daniel, is an experienced home exchanger who is dedicated to making your mountain escape memorable. He'll provide insights into local activities and ensure your mountain retreat is everything you desire.  Book your stay in this mountain view bliss today and immerse yourself in the beauty of the Colorado mountains.",
+        "service_provider_name": "Daniel",
+        "service_provider_image": "https://i.postimg.cc/5N40MGRL/69-698023-industrial-worker-png-free-download-worker-png.webp",
+        "service_area": "Breckenridge, Colorado",
+        "service_price": 280.00
+      }
+    ]
+  
+  

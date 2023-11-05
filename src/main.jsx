@@ -12,6 +12,7 @@ import Login from './Components/Login/Login';
 import Signup from './Signup/Signup';
 import AuthProvider from './AuthProvider/AuthProvider';
 import Dasborad from './Components/Dasborad/Dasborad';
+import AllServices from './Components/AllServices/AllServices';
 
 
 
@@ -33,6 +34,11 @@ const router = createBrowserRouter([
         path:"/signup",
         element:<Signup></Signup>
       },
+      {
+
+        path:"/services",
+        element:<AllServices></AllServices>
+      }
      
 
     ]
