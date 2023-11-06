@@ -13,6 +13,7 @@ import Signup from './Signup/Signup';
 import AuthProvider from './AuthProvider/AuthProvider';
 import Dasborad from './Components/Dasborad/Dasborad';
 import AllServices from './Components/AllServices/AllServices';
+import DetailescCard from './Components/DetailesCart.jsx/DetailescCard';
 
 
 
@@ -39,7 +40,12 @@ const router = createBrowserRouter([
         path:"/services",
         element:<AllServices></AllServices>,
         loader:()=>fetch('http://localhost:5000/services'),
-      }
+      },
+      {
+        path:"/services/:id",
+        element:<DetailescCard></DetailescCard>,
+        loader:({params})=> fetch(`http://localhost:5000/services/${params.id}`)
+      },
      
 
     ]
