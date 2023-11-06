@@ -2,7 +2,7 @@
 
 import { Link } from "react-router-dom";
 
-const AllServicesCart = ({services, Aservice,setServices}) => {
+const AllServicesCart = ({ Aservice}) => {
     const { _id,service_image,service_description,service_name,service_provider_image,service_provider_name,service_price,service_area}= Aservice || {};
     const sliceDescription = service_description.slice(0,100);
   

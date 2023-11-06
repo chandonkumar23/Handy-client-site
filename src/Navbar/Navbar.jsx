@@ -31,9 +31,9 @@ const Navbar = () => {
         <li>
           <a>Dashboard</a>
           <ul className="p-2">
-            <li ><Link to={'/'}>My Services</Link></li>
-            <li><Link to={'/'}>Add Services</Link></li>
-            <li><Link to={'/'}>My Shedules</Link></li>
+           <li ><Link to={'/addService'}>Add Services</Link></li>
+            <li><Link to={'/manageProduct'}>Manage Services</Link></li>
+            <li><Link to={'/myshedule'}>My Shedules</Link></li>
           </ul>
         </li>
         <li><a>Item 3</a></li>
@@ -63,9 +63,9 @@ const Navbar = () => {
       <details className="px-5">
           <summary className="bg-orange-400 rounded-sm text-xl">Dashboard</summary>
           <ul className="">
-           <li><Link to={'/'}>My Services</Link></li>
-            <li><Link to={'/'}>Add Services</Link></li>
-            <li><Link to={'/'}>My Shedules</Link></li>
+           <li ><Link to={'/addService'}>Add Services</Link></li>
+            <li><Link to={'/manageProduct'}>Manage Services</Link></li>
+            <li><Link to={'/myshedule'}>My Shedules</Link></li>
           </ul>
         </details> : <Link></Link>
         

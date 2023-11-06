@@ -11,9 +11,13 @@ import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import Signup from './Signup/Signup';
 import AuthProvider from './AuthProvider/AuthProvider';
-import Dasborad from './Components/Dasborad/Dasborad';
+// import Dasborad from './Components/Dasborad/Dasborad';
 import AllServices from './Components/AllServices/AllServices';
 import DetailescCard from './Components/DetailesCart.jsx/DetailescCard';
+import AddService from './Components/AddService';
+import ManageService from './Components/ManageService';
+import MyShedule from './Components/MyShedule';
+// import AddService from './Components/AddService';
 
 
 
@@ -46,22 +50,41 @@ const router = createBrowserRouter([
         element:<DetailescCard></DetailescCard>,
         loader:({params})=> fetch(`http://localhost:5000/services/${params.id}`)
       },
+      {
+        path:"/addService",
+        element:<AddService></AddService>
+      },
+      {
+        path:"/manageProduct",
+        element:<ManageService></ManageService>
+      },
+      {
+        path:"/myshedule",
+        element:<MyShedule></MyShedule>
+      }
      
 
     ]
     
   },
-  {
-    path:"/dasborad",
-    element:<Dasborad></Dasborad>,   
-    children:[
-      {
-        path:"/dasborad",
-        element:<h1>Dasboard</h1>
-      },
+  // {
+  //   path:"/dasborad",
+  //   element:<Dasborad></Dasborad>,   
+  //   children:[
+  //     {
+  //       path:"/dasborad",
+  //       element:<h1>Dasboard</h1>
+  //     },
+  //     {
+  //       path:"/addService",
+  //       element:<AddService></AddService>
+  //     },
+      
+
+      
      
-    ]
-  },
+  //   ]
+  // },
  
  
 ]);
