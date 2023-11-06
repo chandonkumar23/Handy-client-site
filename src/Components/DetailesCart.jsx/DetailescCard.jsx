@@ -3,13 +3,55 @@ import { MdLocationPin } from "react-icons/md";
 
 import { useLoaderData} from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import swal from "sweetalert";
 
 
 
 const DetailescCard = () => {
     const SingleData = useLoaderData()
-    const { _id,service_provider_location,service_image,service_description,service_name,service_provider_image,service_provider_name,service_price,service_area}= SingleData;
+    const {_id, service_provider_location,service_image,service_description,service_name,service_provider_image,service_provider_name,service_price,service_area}= SingleData;
     const {user} = useContext(AuthContext)
+
+    const handleBooking = event =>{
+        event.preventDefault();
+        const form = event.target;
+        const name = form.name.value;
+        const image = form.image.value;
+        const userEmail = form.userEmail.value;
+        const providerEmail = form.providerEmail.value;
+        const Date = form.Date.value;
+        const price = form.price.value;
+        const book = {
+
+            name,
+            image,
+            userEmail,
+            providerEmail,
+            Date,
+            price,
+            service_id: _id
+            
+        }
+        console.log(book)
+
+        fetch('http://localhost:5000/bookings',{
+            method: 'POST',
+            headers:{
+              'content-type': 'application/json'
+            },
+            body: JSON.stringify(book)
+        })
+        .then(res => res.json())
+        .then(data =>{
+            console.log(data)
+            if(data.insertedId){
+                swal("thank You", "Book Successfully","success")
+            }
+        })
+
+
+
+    }
  
     return (
         <div className="w-3/5 mx-auto py-8 ">
@@ -37,39 +79,35 @@ const DetailescCard = () => {
           </div>    
           </div>
            </div>     
-            </div>
-
-            
-
-          
+            </div>       
 {/* The button to open modal */}
-
-
 {/* Put this part before </body> tag */}
 <input type="checkbox" id="my_modal_6" className="modal-toggle" />
 <div className="modal">
   <div className="modal-box">
  
-  <form className="card-body">
+ <div className="form">
+
+ <form onSubmit={handleBooking} className="card-body">
         <div className="flex gap-2">
         <div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Service Name</span>
           </label>
-          <input type="text" defaultValue={service_name} readOnly className="input input-bordered input-warning w-[200px] max-w-xs" />
+          <input type="text" name="name" defaultValue={service_name} readOnly className="input input-bordered input-warning w-[200px] max-w-xs" />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Service Image</span>
           </label>
-          <input type="text" defaultValue={service_image} className="input input-bordered input-warning w-[200px] max-w-xs" />
+          <input type="text" name="image" defaultValue={service_image} className="input input-bordered input-warning w-[200px] max-w-xs" />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Service Provider E-mail</span>
           </label>
-          <input type="text" placeholder="Type here" className="input input-bordered input-warning w-[200px] max-w-xs" />
+          <input type="text" name="providerEmail" placeholder="Type here" className="input input-bordered input-warning w-[200px] max-w-xs" />
         </div>
         </div>
       <div>
@@ -77,29 +115,30 @@ const DetailescCard = () => {
           <label className="label">
             <span className="label-text">User E-mail</span>
           </label>
-          <input type="text" defaultValue={user.email} readOnly className="input input-bordered input-warning w-[200px] max-w-xs" />
+          <input type="text" name="userEmail" defaultValue={user.email} readOnly className="input input-bordered input-warning w-[200px] max-w-xs" />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Taking Date</span>
           </label>
-          <input type="date" placeholder="Type here" className="input input-bordered input-warning w-[200px] max-w-xs" />
+          <input type="date" name="Date" placeholder="Type here" className="input input-bordered input-warning w-[200px] max-w-xs" />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Price</span>
           </label>
-          <input type="text" defaultValue={service_price} readOnly className="input input-bordered input-warning w-[200px] max-w-xs" />
+          <input type="text" name="price" defaultValue={service_price} readOnly className="input input-bordered input-warning w-[200px] max-w-xs" />
         </div>
       </div>   
         </div>
         <div className="form-control mt-6">
-          <button className="btn bg-orange-400">Purchase </button>
+          <button className="btn bg-orange-400" >Purchase </button>
         </div>
       </form>
     <div className="modal-action">
       <label htmlFor="my_modal_6" className="btn">Close!</label>
     </div>
+ </div>
   </div>
 </div>
 
