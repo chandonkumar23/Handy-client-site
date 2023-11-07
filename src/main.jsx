@@ -51,24 +51,24 @@ const router = createBrowserRouter([
       },
       {
         path:"/services/:id",
-        element:<DetailescCard></DetailescCard>,
+        element:<PrivetRoute><DetailescCard></DetailescCard></PrivetRoute>,
         loader:({params})=> fetch(`http://localhost:5000/services/${params.id}`)
       },
       {
         path:"/addService",
-        element:<AddService></AddService>
+        element:<PrivetRoute><AddService></AddService></PrivetRoute>
       },
       {
         path:"/manageProduct",
-        element:<ManageService></ManageService>
+        element:<PrivetRoute><ManageService></ManageService></PrivetRoute>
       },
       {
         path:"/myshedule",
-        element:<MyShedule></MyShedule>
+        element:<PrivetRoute><MyShedule></MyShedule></PrivetRoute>
       },
       {
         path:"/update/:id",
-        element:<Update></Update>,
+        element:<PrivetRoute><Update></Update></PrivetRoute>,
         loader: ()=> fetch('http://localhost:5000/AddServices')
       }
     ]

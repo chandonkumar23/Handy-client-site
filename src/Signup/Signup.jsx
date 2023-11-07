@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import swal from "sweetalert";
+import GoogleLoing from "../Components/Login/GoogleLoing";
 
 
 const Signup = () => {
@@ -79,7 +80,7 @@ const Signup = () => {
              </label>
            </div>
            <div className="form-control mt-6">
-             <button className="btn btn-primary">Signup</button>
+             <button className="btn bg-orange-400">Signup</button>
            </div>
          
             {
@@ -91,6 +92,7 @@ const Signup = () => {
             <hr />
             <p className="text-orange-500">Already have an account<Link to={'/login'}> <span className="text-primary">Log in</span></Link></p>
         </div>
+        <GoogleLoing></GoogleLoing>
          </form>
        </div>
      </div>

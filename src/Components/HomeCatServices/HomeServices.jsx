@@ -14,7 +14,7 @@ const HomeServices = () => {
     return (
         <div>
             <div className="p-5 bg-slate-100 ">
-                <h1 className="text-5xl font-extrabold text-center"> <span className="text-orange-500">Discover</span> our services </h1>
+                <h1 className="text-5xl font-extrabold text-center"> <span className="text-orange-500">Popular</span> services </h1>
                 <div className=" gap-4  w-4/5 mx-auto p-7   ">
                     {
                         services.slice(0,4).map(service =><ServcesCart key={service._id} service={service}></ServcesCart>)

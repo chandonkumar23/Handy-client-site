@@ -101,13 +101,13 @@ const DetailescCard = () => {
           <label className="label">
             <span className="label-text">Service Image</span>
           </label>
-          <input type="text" name="image" defaultValue={service_image} className="input input-bordered input-warning w-[200px] max-w-xs" />
+          <input type="text" name="image" defaultValue={service_image} readOnly className="input input-bordered input-warning w-[200px] max-w-xs" />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Service Provider E-mail</span>
           </label>
-          <input type="text" name="providerEmail" placeholder="Type here" className="input input-bordered input-warning w-[200px] max-w-xs" />
+          <input type="text" name="providerEmail" defaultValue={user.email} placeholder="Type here" className="input input-bordered input-warning w-[200px] max-w-xs" />
         </div>
         </div>
       <div>
@@ -130,6 +130,13 @@ const DetailescCard = () => {
           <input type="text" name="price" defaultValue={service_price} readOnly className="input input-bordered input-warning w-[200px] max-w-xs" />
         </div>
       </div>   
+      
+        </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Instration</span>
+          </label>
+          <input type="text" name="price" defaultValue={service_description}  className="input input-bordered input-warning w-full max-w-xs" />
         </div>
         <div className="form-control mt-6">
           <button className="btn bg-orange-400" >Purchase </button>

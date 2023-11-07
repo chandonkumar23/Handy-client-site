@@ -1,4 +1,5 @@
-import { Children, useContext } from "react";
+/* eslint-disable react/prop-types */
+import {  useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { Navigate, useLocation } from "react-router-dom";
 
@@ -7,7 +8,7 @@ const PrivetRoute = ({children}) => {
     const location = useLocation()
     console.log(location.pathname)
     if(load){
-        return <span className="loading loading-spinner text-accent flex justify-center mx-auto text-5xl"></span>
+        return <span className="loading loading-spinner text-error flex justify-center mx-auto"></span>
     }
     if(user){
         return children;

@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import swal from "sweetalert";
+import GoogleLoing from "./GoogleLoing";
 
 
 const Login = () => {
@@ -61,7 +62,7 @@ const Login = () => {
         </div>
       
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Login</button>
+          <button className="btn bg-orange-500">Login</button>
           {
             sinerror && <p className="text-red-500">{sinerror}</p>
           }
@@ -71,6 +72,7 @@ const Login = () => {
             <hr />
             <p className="text-orange-500"><Link to={'/signup'}>Create a new account </Link></p>
         </div>
+        <GoogleLoing></GoogleLoing>
       </form>
     </div>
   </div>
