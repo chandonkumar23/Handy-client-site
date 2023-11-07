@@ -32,7 +32,7 @@ const AddService = () => {
     .then(data =>{
       console.log(data)
       if(data.insertedId){
-        swal("thank You", "Book Successfully               ","success")
+        swal("thank You", "Add Successfully               ","success")
     }
     })
 

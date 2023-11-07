@@ -18,6 +18,7 @@ import AddService from './Components/AddService';
 import ManageService from './Components/ManageService';
 import MyShedule from './Components/MyShedule';
 import Error from './Components/ErrorPage/Error';
+import Update from './Components/Update';
 // import AddService from './Components/AddService';
 
 
@@ -63,6 +64,11 @@ const router = createBrowserRouter([
       {
         path:"/myshedule",
         element:<MyShedule></MyShedule>
+      },
+      {
+        path:"/update/:id",
+        element:<Update></Update>,
+        loader: ()=> fetch('http://localhost:5000/AddServices')
       }
      
 
