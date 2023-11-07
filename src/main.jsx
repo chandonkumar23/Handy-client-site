@@ -19,6 +19,7 @@ import ManageService from './Components/ManageService';
 import MyShedule from './Components/MyShedule';
 import Error from './Components/ErrorPage/Error';
 import Update from './Components/Update';
+import PrivetRoute from './Components/PrivetRoute.jsx/PrivetRoute';
 // import AddService from './Components/AddService';
 
 
@@ -70,29 +71,8 @@ const router = createBrowserRouter([
         element:<Update></Update>,
         loader: ()=> fetch('http://localhost:5000/AddServices')
       }
-     
-
     ]
-    
   },
-  // {
-  //   path:"/dasborad",
-  //   element:<Dasborad></Dasborad>,   
-  //   children:[
-  //     {
-  //       path:"/dasborad",
-  //       element:<h1>Dasboard</h1>
-  //     },
-  //     {
-  //       path:"/addService",
-  //       element:<AddService></AddService>
-  //     },
-      
-
-      
-     
-  //   ]
-  // },
  
  
 ]);

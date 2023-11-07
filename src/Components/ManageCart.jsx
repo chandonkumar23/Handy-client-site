@@ -52,8 +52,8 @@ const ManageCart = ({data,service,setService}) => {
                     <p><span className="font-bold text-slate-400">Area:</span> {area}</p>
                     <p><span className="font-bold text-slate-400">Price: </span>${price}</p>
                     <br />
-                    <button><Link to={`/update/${_id}`}>edit</Link></button>
-                      <button>  <Link onClick={()=> handleDelete(_id)} className="btn bg-red-400 p-2">delete</Link></button>
+                    <button><Link to={`/update/${_id}`} className="btn bg-green-400">edit</Link></button>
+                      <button>  <Link onClick={()=> handleDelete(_id)} className="btn bg-red-300 p-2">delete</Link></button>
                 </div>
             </div>
         </div>
