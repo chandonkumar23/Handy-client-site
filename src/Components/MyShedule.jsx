@@ -26,9 +26,7 @@ const MyShedule = () => {
                          key={book._id} 
                          book={book}
                          ></MyBooking>)
-                   }
-                
-                   
+                   }                 
                 </div>
             </div>
          </div>

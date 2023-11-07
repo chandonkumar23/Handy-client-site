@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
+import swal from "sweetalert";
 
 
 const AddService = () => {
@@ -19,6 +20,21 @@ const AddService = () => {
       name,userEmail,userName,price,image,area,description
     }
     console.log(AddData);
+
+    fetch('http://localhost:5000/AddServices',{
+      method: 'POST',
+      headers : {
+        'content-type' : 'application/json'
+      },
+      body : JSON.stringify(AddData)
+    })
+    .then(res => res.json())
+    .then(data =>{
+      console.log(data)
+      if(data.insertedId){
+        swal("thank You", "Book Successfully               ","success")
+    }
+    })
 
   }
 
