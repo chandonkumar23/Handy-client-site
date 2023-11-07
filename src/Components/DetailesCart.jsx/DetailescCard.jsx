@@ -45,7 +45,7 @@ const DetailescCard = () => {
         .then(data =>{
             console.log(data)
             if(data.insertedId){
-                swal("thank You", "Book Successfully","success")
+                swal("thank You", "Book Successfully               ","success")
             }
         })
 

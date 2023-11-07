@@ -17,6 +17,7 @@ import DetailescCard from './Components/DetailesCart.jsx/DetailescCard';
 import AddService from './Components/AddService';
 import ManageService from './Components/ManageService';
 import MyShedule from './Components/MyShedule';
+import Error from './Components/ErrorPage/Error';
 // import AddService from './Components/AddService';
 
 
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<Error></Error>,
     
     children:[
       {
