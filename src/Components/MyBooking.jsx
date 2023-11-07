@@ -1,10 +1,10 @@
 
 
 const MyBooking = ({book}) => {
-    const {name,image,userEmail,providerEmail,Date,price} = book;
+    const {name,image,Date,price} = book;
     return (
         <div className="p-4">
-            <div className="flex items-center gap-10 border-2 shadow-md">
+            <div className="flex items-center gap-10 border-2 rounded-md shadow-md">
                <div> <img src={image} alt="" /></div>
 
                <div>
@@ -12,7 +12,6 @@ const MyBooking = ({book}) => {
                 <p className="">Price: ${price}</p>
                 <p> Date: {Date}</p>
                </div>
-
             </div>
         </div>
     );
