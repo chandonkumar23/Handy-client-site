@@ -9,7 +9,7 @@ const ManageService = () => {
     const [manage , setManage] = useState([]);
    
 
-    const ManageData=`http://localhost:5000/AddServices?userEmail=${user.email}`;
+    const ManageData=`http://localhost:5000/AddServices?usermail=${user.email}`;
     // const [service , setService] = useState(ManageData);
    
 

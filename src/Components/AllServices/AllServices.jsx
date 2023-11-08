@@ -21,7 +21,7 @@ const AllServices = () => {
                 }
             </div>
             {
-                services.length > 6 && <button className="btn bg-orange-400 p-2 px-5 rounded-sm  flex justify-center mx-auto" onClick={()=>setShow(!show)}>{show?"":"more"}</button>
+                services.length > 6 && <button className=" p-2 px-5 rounded-sm  flex justify-center mx-auto" onClick={()=>setShow(!show)}>{show?"":"more"}</button>
             }
             
         </div>

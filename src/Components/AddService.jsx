@@ -6,18 +6,20 @@ import swal from "sweetalert";
 const AddService = () => {
   const {user} = useContext(AuthContext)
 
+
   const handleAdd = event=>{
     event.preventDefault();
     const form = event.target;
     const name =form.name.value;
     const image = form.image.value;
-    const userEmail = form.userEmail.value;
+    const usermail = form.usermail.value;
     const userName = form.userName.value;
     const price = form.price.value;
     const area = form.area.value;
+    const YourImage = form.YourImage.value;
     const description = form.description.value;
     const AddData = {
-      name,userEmail,userName,price,image,area,description
+      name,usermail,userName,price,image,area,description,YourImage
     }
     console.log(AddData);
 
@@ -32,7 +34,7 @@ const AddService = () => {
     .then(data =>{
       console.log(data)
       if(data.insertedId){
-        swal("thank You", "Add Successfully               ","success")
+        swal("thank You", "Add Successfully ","success")
     }
     })
 
@@ -48,41 +50,47 @@ const AddService = () => {
 
       <div className="form-control">
           <label className="label">
-            <span className="label-text">Picture URL</span>
+            <span className="label-text"> Service Picture URL</span>
           </label>
-         <input className="border-2  border-orange-400 rounded-sm"name="image" type="text" />
+         <input className="border-2  border-orange-400 rounded-sm" required name="image" type="text" />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Service Name</span>
           </label>
-         <input className="border-2 border-orange-400  rounded-sm" name="name" type="text" />
+         <input className="border-2  border-orange-400  rounded-sm" required name="name" type="text" />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Your Name</span>
           </label>
-         <input className="border-2  border-orange-400 rounded-sm" defaultValue={user.name} name="userName" type="text" />
+         <input className="border-2   border-orange-400 rounded-sm" defaultValue={user.displayName} readOnly name="userName" type="text" />
         </div>
+        {/* <div className="form-control">
+          <label className="label">
+            <span className="label-text">Your Photo</span>
+          </label>
+         <input className="border-2 required  border-orange-400 rounded-sm"  name="YourImage" type="text" />
+        </div> */}
       </div>
        <div>
        <div className="form-control">
           <label className="label">
             <span className="label-text">Your E-mail</span>
           </label>
-         <input className="border-2 border-orange-400  rounded-sm" defaultValue={user.email} readOnly name="userEmail" type="email" />
+         <input className="border-2  border-orange-400  rounded-sm" defaultValue={user.email} readOnly name="usermail" type="email" />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Price</span>
           </label>
-         <input className="border-2 border-orange-400  rounded-sm" name="price" type="text" />
+         <input className="border-2  border-orange-400  rounded-sm" required name="price" type="text" />
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Area</span>
+            <span className="label-text">Service Area</span>
           </label>
-         <input className="border-2 border-orange-400  rounded-sm" name="area" type="text" />
+         <input className="border-2 border-orange-400  rounded-sm"  required name="area" type="text" />
         </div>
        </div>
       </div>
@@ -90,7 +98,7 @@ const AddService = () => {
           <label className="label">
             <span className="label-text">Description</span>
           </label>
-         <input className="border-2 border-orange-400  rounded-sm" name="description" type="" />
+         <input className="border-2  border-orange-400  rounded-sm" required name="description" type="" />
         </div>
         <div className="form-control mt-6">
           <button className="btn bg-orange-400">Add</button>

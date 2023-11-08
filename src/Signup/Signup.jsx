@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
@@ -6,7 +7,7 @@ import GoogleLoing from "../Components/Login/GoogleLoing";
 
 
 const Signup = () => {
-  const {createUser} = useContext(AuthContext)
+  const {createUser,update} = useContext(AuthContext)
   const [sinuperror , setSignupError] =useState('');
   const handleSignup = e=>{
     e.preventDefault();
@@ -15,7 +16,8 @@ const Signup = () => {
     const name = form.get('name');
     const email = form.get('email');
     const password = form.get('password');
-    console.log(name,email,password);
+    const img = form.get('img');
+    console.log(name,email,password ,img);
     if(password.length < 6){
       setSignupError("password must be 6 characters")
       return;
@@ -31,11 +33,14 @@ const Signup = () => {
   setSignupError('')
   createUser(email,password)
   .then(result =>{
-    console.log(result.user)
+   update(name,img)
+   .then(()=>{
     if(createUser){
       swal("thank You", "Successfully Registered","success")
 
     }
+   })
+   
   })
   .catch(error =>{
     console.error(error)
@@ -63,6 +68,12 @@ const Signup = () => {
                <span className="label-text">Name</span>
              </label>
              <input type="name" name="name" placeholder="name" className="input input-bordered" required />
+           </div>
+           <div className="form-control">
+             <label className="label">
+               <span className="label-text">Photo URL</span>
+             </label> 
+             <input type="text" name="img" placeholder="name" className="input input-bordered" required />
            </div>
            <div className="form-control">
              <label className="label">

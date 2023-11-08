@@ -6,7 +6,7 @@ import MyBooking from "./MyBooking";
 const MyShedule = () => {
     const {user}=useContext(AuthContext);
     const [booking , setBooking] =useState([]);
-    const BookingsData=`http://localhost:5000/bookings?userEmail=${user.email}`;
+    const BookingsData=`http://localhost:5000/bookings?usermail=${user.email}`;
     useEffect ( ()=>{
         fetch(BookingsData)
         .then(res => res.json())

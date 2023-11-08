@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const ManageCart = ({data,manage,setManage,}) => {
-     const {_id, name,userEmail,userName,price,image,area,description}=data ;
-
+     const {_id, name,usermail,userName,price,image,area,description}=data ;
+     const sliceDescription = description.slice(0,100);
 
         const handleDelete = _id =>{
           console.log(_id);
@@ -45,9 +45,9 @@ const ManageCart = ({data,manage,setManage,}) => {
                 <img className="h-[250px] w-[350px]" src={image} alt="" />
                 <div>
                     <h2 className="text-xl font-bold">{name}</h2>
-                    <p>{description}</p>
+                    <p>{sliceDescription}</p>
                     <p> <span className="font-bold text-slate-400">Name:</span> {userName}</p>
-                    <p><span className="font-bold  text-slate-400">E-mail:</span>  {userEmail}</p>
+                    <p><span className="font-bold  text-slate-400">E-mail:</span>  {usermail}</p>
                     <p><span className="font-bold text-slate-400">Area:</span> {area}</p>
                     <p><span className="font-bold text-slate-400">Price: </span>${price}</p>
                     <br />
