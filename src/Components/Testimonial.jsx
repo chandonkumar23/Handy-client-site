@@ -63,12 +63,8 @@ const Testimonial = () => {
            </div>
                 <p className="mx-2 text-slate-500 italic">❝The website was user-friendly and made it incredibly easy to find the exact service I needed. Booking an
                   appointment was a breeze, and I appreciated the quick response from their team. The professionals they connected❞
-                  </p>
-                 
-            </div>
-            
-          
-            
+                  </p>         
+            </div>             
             </div>
         </div>
     );
