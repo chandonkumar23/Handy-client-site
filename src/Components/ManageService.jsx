@@ -20,9 +20,9 @@ const ManageService = () => {
     },[])
   
     return (
-        <div className="py-5 h-[400px]">     
+        <div className="py-5 ">     
             <h2 className="text-3xl font-bold mx-5">Manage Services</h2>
-          <div className="w-3/5 mx-auto p-8">
+          <div className="sm:block   lg:w-3/5 mx-auto p-8">
           
           {
               manage?.map(data => <ManageCart

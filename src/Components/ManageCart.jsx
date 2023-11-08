@@ -40,7 +40,7 @@ const ManageCart = ({data,manage,setManage,}) => {
 
 
     return (
-        <div className="py-3">
+        <div className="">
             <div className="sm:block lg:flex items-center gap-4 border-2 p-2">
                 <img className="h-[250px] w-[350px]" src={image} alt="" />
                 <div>
