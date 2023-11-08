@@ -107,7 +107,7 @@ const DetailescCard = () => {
           <label className="label">
             <span className="label-text">Service Provider E-mail</span>
           </label>
-          <input type="text" name="providerEmail" defaultValue={user.email} placeholder="Type here" className="input input-bordered input-warning w-[200px] max-w-xs" />
+          <input type="text" name="providerEmail" defaultValue={user.email} readOnly placeholder="Type here" className="input input-bordered input-warning w-[200px] max-w-xs" />
         </div>
         </div>
       <div>

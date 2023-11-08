@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Subscribetion = () => {
     return (
-        <div className="pt-8 p-5">
+        <div className="p-10 my-10">
             <div className="h-[500px] w-11/12 mx-auto " style={{backgroundImage: 'url(https://i.postimg.cc/vBfzbh4c/jeshoots-com-ZMnefo-I3k-unsplash.jpg)'}}>   
            <div className="hero-overlay bg-opacity-60"></div>
           <div className=" text-center ">

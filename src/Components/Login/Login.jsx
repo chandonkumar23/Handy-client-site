@@ -42,8 +42,8 @@ const Login = () => {
     <div className="text-center lg:text-left">
     </div>
     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-    <img className="h-[70px] w-[70px] flex justify-center mx-auto" src="https://i.ibb.co/bg9LQFQ/login-1.png" alt="" />
-    <h3 className="text-xl text-orange-500">User Login</h3>
+    <img className="h-[70px] w-[70px] flex justify-center mx-auto" src="https://i.postimg.cc/mrL4C4yg/resizew.png" alt="" />
+    <h3 className="text-xl text-orange-500 font-bold">Log in</h3>
       <form onSubmit={handleLogin} className="card-body">
         <div className="form-control">
           <label className="label">

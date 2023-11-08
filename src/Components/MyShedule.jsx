@@ -14,11 +14,17 @@ const MyShedule = () => {
     },[])
     
     return (
-        <div className="11/12">
+        <div className="11/12 p-10">
          <div className="grid lg:grid-cols-2 justify-around ">
          <div className="p-7">
-            <h2 className="text-3xl font-bold">M<span className="text-orange-400">y</span> Shedule<span className="text-orange-400">s</span></h2>
+            <h2 className="text-3xl font-bold">My Shedules</h2>
+            {
+                booking.length===0 ?(
+                    <p className="">No Service Avalable</p>
+                )
+            
 
+        :(
             <div className="p-7 bg-slate-50 rounded-lg">
                 <div>
                    {
@@ -29,12 +35,14 @@ const MyShedule = () => {
                    }                 
                 </div>
             </div>
+
+        )
+                }
          </div>
 
          <div>
             <div className="p-7">
-            <h2 className="text-3xl font-bold">Panddin<span className="text-orange-400">g</span> Work<span className="text-orange-400">s</span></h2>
-
+            <h2 className="text-3xl font-bold">My pendind works</h2>
             </div>
          </div>
          </div>

@@ -10,7 +10,8 @@ const ManageService = () => {
    
 
     const ManageData=`http://localhost:5000/AddServices?userEmail=${user.email}`;
-    const [service , setService] = useState(ManageData);
+    // const [service , setService] = useState(ManageData);
+   
 
     useEffect( ()=>{
         fetch(ManageData)
@@ -19,16 +20,16 @@ const ManageService = () => {
     },[])
   
     return (
-        <div className="py-5">     
-            <h2 className="text-3xl font-bold mx-5"><span className="text-orange-400">M</span>anage Service<span className="text-orange-400">s</span></h2>
+        <div className="py-5 h-[400px]">     
+            <h2 className="text-3xl font-bold mx-5">Manage Services</h2>
           <div className="w-3/5 mx-auto p-8">
           
           {
               manage?.map(data => <ManageCart
                          key={data._id} 
                          data={data}
-                         service={service}
-                         setService={setService}
+                         manage={manage}
+                         setManage={setManage}
                          ></ManageCart>)
             }
           </div>

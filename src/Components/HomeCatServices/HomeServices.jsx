@@ -13,7 +13,7 @@ const HomeServices = () => {
     },[])
     return (
         <div>
-            <div className="p-5 bg-slate-100 mx-9 rounded-md">
+            <div className="sm:block lg:p-5 bg-slate-100 mx-9 rounded-md">
                 <h1 className="text-5xl font-extrabold text-center"> <span className="text-orange-500">Popular</span> services </h1>
                 <div className=" gap-4  w-4/5 mx-auto p-7   ">
                     {

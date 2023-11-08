@@ -41,7 +41,7 @@ const Navbar = () => {
     </div>
   <div className="flex items-center ">
     <img className="border-4 rounded-full border-orange-400" src="https://i.postimg.cc/mrL4C4yg/resizew.png" alt="" />
-<h1 className="text-3xl text-orange-400 font-bold">Handy</h1>
+<h1 className="text-3xl text-orange-500 font-bold">Han<span className="text-black">dy</span></h1>
   </div>
   </div>
   <div className="navbar-center hidden lg:flex ">

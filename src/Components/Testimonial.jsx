@@ -2,7 +2,7 @@ import { AiFillStar } from "react-icons/ai";
 
 const Testimonial = () => {
     return (
-        <div className="w-11/12 mx-auto pt-8 p-5">
+        <div className="w-11/12 mx-auto  p-10 my-10">
                 <h1 className="text-5xl font-extrabold text-center"> <span className="text-orange-500">Testi</span>monial</h1>
             <div className="grid lg:grid-cols-3 gap-3 p-8 pt-16  ">
             <div className="border-l-4  border-orange-500 mx-3 shadow-lg rounded-lg">

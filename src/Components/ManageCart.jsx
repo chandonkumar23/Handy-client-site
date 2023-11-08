@@ -2,8 +2,8 @@
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const ManageCart = ({data,service,setService}) => {
-     const {_id, name,userEmail,userName,price,image,area,description}=data;
+const ManageCart = ({data,manage,setManage,}) => {
+     const {_id, name,userEmail,userName,price,image,area,description}=data ;
 
 
         const handleDelete = _id =>{
@@ -30,8 +30,8 @@ const ManageCart = ({data,service,setService}) => {
                      "Your file has been deleted.",
                      "success"
                   )
-                  const remainig = service.filter(del => del._id !== _id);
-                  setService(remainig)
+                  const remainig = manage.filter(del => del._id !== _id);
+                  setManage(remainig)
                 }
               })
             }
