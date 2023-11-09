@@ -9,9 +9,10 @@ const ManageService = () => {
     console.log(user)
     const [manage , setManage] = useState([]);
    
+   
 
-    const ManageData=`https://assignment-11-server-side-beta.vercel.app/bookings?usermail=${user.email}`;
-    // const [service , setService] = useState(ManageData);
+    const ManageData=`https://assignment-11-server-side-beta.vercel.app/AddServices?usermail=${user.email}`;
+    
    
 
     useEffect( ()=>{

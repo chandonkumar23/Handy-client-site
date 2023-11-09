@@ -5,7 +5,7 @@ import swal from "sweetalert";
 
 const AddService = () => {
   const {user} = useContext(AuthContext)
-
+  // const userPhoto = (user.photoURL)
 
   const handleAdd = event=>{
     event.preventDefault();
@@ -16,10 +16,9 @@ const AddService = () => {
     const userName = form.userName.value;
     const price = form.price.value;
     const area = form.area.value;
-    const YourImage = form.YourImage.value;
     const description = form.description.value;
     const AddData = {
-      name,usermail,userName,price,image,area,description,YourImage
+      name,usermail,userName,price,image,area,description
     }
     console.log(AddData);
 

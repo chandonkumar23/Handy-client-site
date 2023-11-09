@@ -36,7 +36,6 @@ const Navbar = () => {
             <li><Link to={'/myshedule'} >My Shedules</Link></li>
           </ul>
         </li>
-        <li><a>Item 3</a></li>
       </ul>
     </div>
   <div className="flex items-center ">

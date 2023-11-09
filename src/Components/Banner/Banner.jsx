@@ -7,8 +7,8 @@ const Banner = () => {
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
-      <div className="mb-5 text-5xl font-bold mt-4 "><h1 className="text-5xl font-bold">Han<span className="k">dy</span></h1></div>
-      <p className="mb-5 ">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <div className="mb-5 text-5xl font-bold mt-4 "><h1 className="text-5xl font-bold">Han<span className="">dy</span></h1></div>
+      <p className="mb-5 ">We are providing all home services.Lte's start now</p>
       <Link to={'/signup'} className=" bg-orange-500 text-black px-6 p-3 ">Sign up now</Link>
     </div>
   </div>
