@@ -25,7 +25,7 @@ const Update = () => {
         }
         console.log(allUpdate);
 
-        fetch(`http://localhost:5000/AddServices/${_id}`,{
+        fetch(`https://assignment-11-server-side-beta.vercel.app/AddServices/${_id}`,{
             method:'PUT',
             headers:{
                 'content-type' : 'application/json'

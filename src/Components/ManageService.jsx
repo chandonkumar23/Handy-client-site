@@ -6,10 +6,11 @@ import ManageCart from "./ManageCart";
 const ManageService = () => {
 
     const {user} = useContext(AuthContext)
+    console.log(user)
     const [manage , setManage] = useState([]);
    
 
-    const ManageData=`http://localhost:5000/AddServices?usermail=${user.email}`;
+    const ManageData=`https://assignment-11-server-side-beta.vercel.app/bookings?usermail=${user.email}`;
     // const [service , setService] = useState(ManageData);
    
 

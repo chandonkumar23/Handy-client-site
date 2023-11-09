@@ -47,12 +47,12 @@ const router = createBrowserRouter([
 
         path:"/services",
         element:<AllServices></AllServices>,
-        loader:()=>fetch('http://localhost:5000/AddServices'),
+        loader:()=>fetch('https://assignment-11-server-side-beta.vercel.app/AddServices'),
       },
       {
         path:"/services/:id",
         element:<PrivetRoute><DetailescCard></DetailescCard></PrivetRoute>,
-        loader:({params})=> fetch(`http://localhost:5000/AddServices/${params.id}`)
+        loader:({params})=> fetch(`https://assignment-11-server-side-beta.vercel.app/AddServices/${params.id}`)
       },
       {
         path:"/addService",
@@ -69,7 +69,7 @@ const router = createBrowserRouter([
       {
         path:"/update/:id",
         element:<PrivetRoute><Update></Update></PrivetRoute>,
-        loader: ()=> fetch('http://localhost:5000/AddServices')
+        loader: ()=> fetch('https://assignment-11-server-side-beta.vercel.app/AddServices')
       }
     ]
   },

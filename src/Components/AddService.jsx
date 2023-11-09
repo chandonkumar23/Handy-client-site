@@ -23,7 +23,7 @@ const AddService = () => {
     }
     console.log(AddData);
 
-    fetch('http://localhost:5000/AddServices',{
+    fetch('https://assignment-11-server-side-beta.vercel.app/AddServices',{
       method: 'POST',
       headers : {
         'content-type' : 'application/json'
@@ -107,8 +107,7 @@ const AddService = () => {
     </div>
   </div>
 </div>
-            
-        
+               
     );
 };
 

@@ -5,8 +5,9 @@ import MyBooking from "./MyBooking";
 
 const MyShedule = () => {
     const {user}=useContext(AuthContext);
+    
     const [booking , setBooking] =useState([]);
-    const BookingsData=`http://localhost:5000/bookings?usermail=${user.email}`;
+    const BookingsData=`https://assignment-11-server-side-beta.vercel.app/bookings?usermail=${user.email}`;
     useEffect ( ()=>{
         fetch(BookingsData)
         .then(res => res.json())

@@ -19,7 +19,7 @@ const ManageCart = ({data,manage,setManage,}) => {
           }).then((result) => {
             if (result.isConfirmed) {
              
-              fetch(`http://localhost:5000/AddServices/${_id}`,{
+              fetch(`https://assignment-11-server-side-beta.vercel.app/AddServices/${_id}`,{
                 method:'DELETE'
               })
               .then(res => res.json())
