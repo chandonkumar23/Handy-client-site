@@ -6,7 +6,7 @@ const MyBooking = ({book}) => {
     return (
         <div className="py-8">
             <div className="flex items-center gap-10 border-2 rounded-md shadow-md">
-               <div> <img src={image} alt="" /></div>
+               <div> <img className="h-[270px] w-[270px]" src={image} alt="" /></div>
                <div>
                 <h3 className="text-xl font-bold">{name}</h3>
                 <p className="">Price: ${price}</p>
