@@ -20,6 +20,7 @@ import MyShedule from './Components/MyShedule';
 import Error from './Components/ErrorPage/Error';
 import Update from './Components/Update';
 import PrivetRoute from './Components/PrivetRoute.jsx/PrivetRoute';
+import Addmission from './Components/Addmission/Addmission';
 // import AddService from './Components/AddService';
 
 
@@ -47,12 +48,18 @@ const router = createBrowserRouter([
 
         path:"/services",
         element:<AllServices></AllServices>,
-        loader:()=>fetch('https://assignment-11-server-side-beta.vercel.app/AddServices'),
+        loader:()=>fetch('https://handy-server-site.vercel.app/AddServices'),
+      },
+      {
+
+        path:"/addmission",
+        element:<Addmission></Addmission>,
+        loader:()=>fetch('https://handy-server-site.vercel.app/AddServices'),
       },
       {
         path:"/services/:id",
         element:<PrivetRoute><DetailescCard></DetailescCard></PrivetRoute>,
-        loader:({params})=> fetch(`https://assignment-11-server-side-beta.vercel.app/AddServices/${params.id}`)
+        loader:({params})=> fetch(`https://handy-server-site.vercel.app/AddServices/${params.id}`)
       },
       {
         path:"/addService",
@@ -69,7 +76,7 @@ const router = createBrowserRouter([
       {
         path:"/update/:id",
         element:<PrivetRoute><Update></Update></PrivetRoute>,
-        loader: ()=> fetch('https://assignment-11-server-side-beta.vercel.app/AddServices')
+        loader: ()=> fetch('https://handy-server-site.vercel.app/AddServices')
       }
     ]
   },

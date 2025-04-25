@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "assignment-7bce6"
-  }
+    "default": "assignment-7bce6",
+    "dist": "colly-df2ef"
+  },
+  "targets": {},
+  "etags": {}
 }

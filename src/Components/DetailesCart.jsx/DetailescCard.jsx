@@ -4,6 +4,7 @@ import { MdLocationPin } from "react-icons/md";
 import { useLoaderData} from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import swal from "sweetalert";
+import Navbar from "../../Navbar/Navbar";
 
 
 
@@ -52,14 +53,17 @@ const DetailescCard = () => {
     }
  
     return (
-        <div className="w-3/5 mx-auto py-8 ">
+        <div>
+            <Navbar/>
+          <div className="w-3/5 mx-auto py-8 ">
+        
              <h1 className="text-5xl font-bold">{name}</h1>
             <div className="flex items-center p-2"> 
-            <img className="h-[60px] w-[60px]  border-4 border-orange-400 rounded-full " src={YourImage} alt="" />
+          
            <div className="flex ">
            <div>
-           <h1>{userName}</h1>
-            <p className="flex items-center"><MdLocationPin></MdLocationPin> {area}</p>
+          
+          
            </div>
            </div>
             </div>
@@ -71,10 +75,7 @@ const DetailescCard = () => {
           <div className="flex gap-2">
           
            <label htmlFor="my_modal_6" className="btn bg-orange-400">Book</label>    
-           <div>
-          <p className="font-bold"> Price: ${price}</p>
-           <p className="font-bold">Area: {area}</p>
-          </div>    
+            
           </div>
            </div>     
             </div>       
@@ -157,6 +158,7 @@ const DetailescCard = () => {
 
 
 
+        </div>
         </div>
     );
 };

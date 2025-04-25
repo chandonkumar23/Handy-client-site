@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
-    "firebase": "^10.5.2",
+    "firebase": "^10.14.1",
     "localforage": "^1.10.0",
     "lottie-react": "^2.4.0",
     "match-sorter": "^6.3.1",

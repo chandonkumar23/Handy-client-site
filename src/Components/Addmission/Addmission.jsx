@@ -1,13 +1,13 @@
 
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import AllServicesCart from "./AllServicesCart";
 import Navbar from "../../Navbar/Navbar";
+import AddmissionCard from "./AddmissionCard";
 
 
 
 
-const AllServices = () => {
+const Addmission= () => {
 
     const sericeData = useLoaderData()
     const [show,setShow] = useState(false)
@@ -21,8 +21,8 @@ const AllServices = () => {
             <div className="w-3/4 mx-auto ">
 
                 {
-                    show ? services.map((Aservice) =>(<AllServicesCart key={Aservice._id} Aservice={Aservice} services={services} setServices={setServices}></AllServicesCart>))
-                    : services.slice(0,6).map((Aservice) =>(<AllServicesCart key={Aservice._id} Aservice={Aservice} services={services} setServices={setServices}></AllServicesCart>))
+                    show ? services.map((Aservice) =>(<AddmissionCard key={Aservice._id} Aservice={Aservice} services={services} setServices={setServices}></AddmissionCard >))
+                    : services.slice(0,6).map((Aservice) =>(<AddmissionCard key={Aservice._id} Aservice={Aservice} services={services} setServices={setServices}></AddmissionCard >))
                 }
             </div>
             {
@@ -34,4 +34,4 @@ const AllServices = () => {
     );
 };
 
-export default AllServices;
+export default Addmission;
